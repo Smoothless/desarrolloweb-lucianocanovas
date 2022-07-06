@@ -1,0 +1,427 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+a, a:hover, a:focus, a:active {
+    text-decoration: none;
+    color: inherit;
+}
+
+body {
+    width: 100%;
+    height: 100%;
+    font-family: 'Roboto', sans-serif;
+    background: rgb(224,186,139);
+background: linear-gradient(90deg, rgba(228,213,195,1) 0%, rgba(219,211,168,1) 35%, rgba(236,240,178,1) 100%);
+    background-repeat: cover;
+}
+
+header {
+    background-color: black;
+    color: white;
+    width: 100%;
+    height: 7%;
+    position: fixed;
+    top: 0;
+    display: flex;
+    align-items: center;
+}
+
+.navegacion {
+    width: 100%;
+    position: fixed;
+    display: flex;
+    font-size: 2em;
+}
+
+.navegacion ul {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 80px;
+}
+
+.titulo {
+    position: fixed;
+    display: flex;
+    justify-content: left;
+    padding-left: 40px;
+    font-size: 20px;
+    text-transform: uppercase;
+}
+
+.foto {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    margin: 200px 0 70px 0;
+}
+
+.texto {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 100px;
+    margin: 70px 0 70px 0;
+    font-size: 2em;
+}
+
+.footer {
+    width: 100%;
+    height: 7%;
+    background-color: black;
+    color: white;
+    position: fixed;
+    bottom: 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 24px;
+}
+
+.productos {
+    position: relative;
+    top: 500px;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 200px;
+}
+
+.producto {
+    display: inline-flex;
+    width: 300px;
+    height: 300px;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.295);
+    font-size: 2em;
+    border: 1px solid black;
+}
+
+.formulario {
+    width: 100%;
+    position: relative;
+    top: 150px;
+    display: flex;
+    justify-content: center;
+    font-size: 35px;
+}
+
+.formulario fieldset {
+    width: 500px;
+}
+
+.formulario legend {
+    text-align: center;
+}
+
+.formulario label {
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    margin-bottom: 10px;
+}
+
+.formulario input {
+    width: 80%;
+    height: 2em;
+    display: flex;
+    margin: auto;
+}
+
+.opciones {
+    width: 80%;
+    height: 2em;
+    display: flex;
+    margin: auto;
+}
+
+.button {
+    display: flex;
+    margin: auto;
+    padding: auto;
+}
+
+.button input {
+    width: 150px;
+    height: 50px;
+    justify-content: center;
+}
+
+.subtitulo {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    top: 250px;
+    font-size: 40px;
+    text-transform: uppercase;
+}
+
+.pasos {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    text-align: left;
+    position: relative;
+    top: 300px;
+    font-size: 28px;
+}
+
+.talles {
+    width: 100%;
+    top: 150px;
+    align-items: center;
+    position: absolute;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    font-family: "Roboto", sans-serif;
+    font-size: 24px;
+}
+.talles td {
+    height: 100px;
+    width: 200px;
+    border: groove;
+    background-color: rgba(250, 250, 250, 0.24);
+}
+
+@media (max-width: 1900px) {
+    
+    .titulo {
+        display: none;
+    }
+
+    .subtitulo, .pasos {
+        text-align: center;
+    }
+}
+
+@media (max-width: 1024px) {
+    
+    .titulo {
+        display: none;
+    }
+
+    .navegacion ul {
+        gap: 50px;
+    }
+
+    .productos {
+        display: block;
+        top: 250px;
+        margin: 0 10% 0 10%;
+    }
+
+    .producto {
+        justify-content: center;
+        align-items: center;
+        margin: auto;
+    }
+
+    .foto {
+        overflow: hidden;
+    }
+
+    .subtitulo, .pasos {
+        text-align: center;
+    }
+     
+}
+
+@media (max-width: 768px) {
+    
+    header {
+        display: flex;
+        height: 10%;
+        font-size: 10px;
+        text-align: center;
+    }
+
+    .footer {
+        display: inline;
+        text-align: center;
+        font-size: 24px;
+        height: 10%;
+    }
+
+    .foto {
+        overflow: hidden;
+    }
+
+    .formulario {
+        top: 140px;
+    }
+
+    .talles td {
+        height: 150px;
+    }
+}
+
+/* *a, a:hover, a:focus, a:active {
+    text-decoration: none;
+    color: inherit;
+}
+
+}
+.subtitulo__comprar {
+    width: 100%;
+    position: absolute;
+    top: 170px;
+    text-align: center;
+    font-family: "Roboto", sans-serif;
+    font-size: 32px;
+    line-height: 70px;
+    justify-content: space-evenly;
+}
+.pasos__comprar {
+    width: 100%;
+    position: absolute;
+    top: 260px;
+    list-style: disc;
+    display: list-item;
+    text-align: center;
+    font-family: "Roboto", sans-serif;
+    font-size: 24px;
+    line-height: 150px;
+    justify-content: space-evenly;
+}
+.formulario {
+    width: 100%;
+    top: 80px;
+    align-items: center;
+    position: absolute;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    font-family: "Roboto", sans-serif;
+    font-size: 24px;
+
+}
+.formulario--input {
+    margin: 30px;
+    font-family: "Roboto", sans-serif;
+    position: relative;
+    width: 400px;
+    height: 63px;
+    text-align: center;
+    display: flex;
+}
+.button {
+    position: relative;
+    top: -20px;
+    color: rgb(0, 0, 0); 
+    font-size: 14px; 
+    line-height: 14px; 
+    padding: 5px; 
+    border-radius: 0px; 
+    font-family: "Roboto", serif; 
+    font-weight: normal; 
+    text-decoration: none; 
+    font-style: normal; 
+    text-transform: none; 
+    display: inline-block;
+}
+    .button:hover {
+    background: #00000080; }
+    .button:active {
+    background: #00000080; }
+
+.nombre__prenda--remera {
+    width: 100%;
+    top: 150px;
+    align-items: center;
+    position: absolute;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    font-family: "Roboto", sans-serif;
+    font-size: 32px;
+}
+.nombre__prenda--pantalon {
+    width: 100%;
+    top: 350px;
+    align-items: center;
+    position: absolute;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    font-family: "Roboto", sans-serif;
+    font-size: 32px;
+}
+.nombre__prenda--hoodie {
+    width: 100%;
+    top: 550px;
+    align-items: center;
+    position: absolute;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    font-family: "Roboto", sans-serif;
+    font-size: 32px;
+}
+.nombre__prenda--shoe {
+    width: 100%;
+    top: 750px;
+    align-items: center;
+    position: absolute;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    font-family: "Roboto", sans-serif;
+    font-size: 32px;
+}
+.prenda--remera {
+    width: 100%;
+    top: 220px;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    justify-content: space-evenly;
+    font-family: "Roboto", sans-serif;
+    font-size: 24px;
+    list-style: none;
+}
+.prenda--pantalon {
+    width: 100%;
+    top: 420px;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    justify-content: space-evenly;
+    font-family: "Roboto", sans-serif;
+    font-size: 24px;
+    list-style: none;
+}
+.prenda--hoodie {
+    width: 100%;
+    top: 620px;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    justify-content: space-evenly;
+    font-family: "Roboto", sans-serif;
+    font-size: 24px;
+    list-style: none;
+}
+.prenda--shoe {
+    width: 100%;
+    top: 820px;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    justify-content: space-evenly;
+    font-family: "Roboto", sans-serif;
+    font-size: 24px;
+    list-style: none;
+}
+.productos ul li{
+    padding: 30px ;
+    background-color: rgba(255, 255, 255, 0.397);
+} */
