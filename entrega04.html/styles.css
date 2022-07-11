@@ -37,11 +37,6 @@ header {
     animation-duration: 1s;
 }
 
-.navegacion a:hover {
-    transform: scale(120%);
-    transition: .2s ease;
-}
-
 .navegacion ul {
     width: 100%;
     display: flex;
