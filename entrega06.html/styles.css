@@ -1,0 +1,121 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+a, a:hover, a:focus, a:active {
+  text-decoration: none;
+  color: inherit;
+}
+
+body {
+  width: 100%;
+  height: 100%;
+  font-family: "Roboto", sans-serif;
+  background: rgb(224, 186, 139);
+  background: linear-gradient(90deg, rgb(228, 213, 195) 0%, rgb(219, 211, 168) 35%, rgb(236, 240, 178) 100%);
+  background-repeat: cover;
+}
+body header {
+  background-color: black;
+  color: white;
+  width: 100%;
+  height: 7%;
+  position: fixed;
+  top: 0;
+  display: flex;
+  align-items: center;
+  z-index: 1;
+}
+body header .navegacion {
+  width: 100%;
+  position: fixed;
+  display: flex;
+  font-size: 2em;
+}
+body header .navegacion a:hover {
+  transform: scale(120%);
+  transition: 0.2s ease;
+}
+body header .navegacion ul {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  gap: 80px;
+}
+body header .titulo {
+  position: fixed;
+  display: flex;
+  justify-content: left;
+  padding-left: 40px;
+  font-size: 20px;
+  text-transform: uppercase;
+}
+body main .foto {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  margin: 200px 0 70px 0;
+}
+body main .texto {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  gap: 100px;
+  margin: 70px 0 70px 0;
+  font-size: 2em;
+}
+body main .inferior {
+  margin-bottom: 5%;
+}
+body footer {
+  width: 100%;
+  height: 7%;
+  background-color: black;
+  color: white;
+  position: fixed;
+  bottom: 0;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  font-size: 24px;
+}
+
+@media (max-width: 1900px) {
+  .titulo {
+    display: none;
+  }
+  .subtitulo, .pasos {
+    text-align: center;
+  }
+}
+@media (max-width: 1350px) {
+  .titulo {
+    display: none;
+  }
+  .navegacion ul {
+    gap: 50px;
+  }
+  .foto {
+    overflow: hidden;
+  }
+}
+@media (max-width: 768px) {
+  header {
+    display: flex;
+    height: 10%;
+    font-size: 10px;
+    text-align: center;
+  }
+  .footer {
+    display: inline;
+    text-align: center;
+    font-size: 24px;
+    height: 10%;
+  }
+  .foto {
+    overflow: hidden;
+  }
+}/*# sourceMappingURL=styles.css.map */
