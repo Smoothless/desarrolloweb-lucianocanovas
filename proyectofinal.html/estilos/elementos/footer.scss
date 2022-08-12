@@ -1,0 +1,9 @@
+@mixin size($ancho, $alto) {
+    height: $alto;
+    width: $ancho;
+}
+
+.footer {
+    @include size(100%,7%);
+    align-items: map-get($estilo, centro);
+}     

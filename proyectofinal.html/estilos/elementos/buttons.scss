@@ -1,0 +1,24 @@
+$verde: #a7e69f;
+$rojo: #ec8c8c;
+
+.button {
+    display: flex;
+    margin: auto;
+    padding: auto;
+    
+    input{
+        width: 150px;
+        height: 50px;
+        justify-content: center;    
+    }
+}
+
+.enviar {
+    @extend .button;
+    background-color: $verde
+}
+
+.limpiar {
+    @extend .button;
+    background-color: $rojo    
+}

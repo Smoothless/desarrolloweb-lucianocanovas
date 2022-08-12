@@ -1,0 +1,12 @@
+$estilo: (
+    color: #ffffff,
+    centro: center,
+    fuente: 1em,
+    ancho-completo: 100%,
+);
+
+header {
+    font-size: map-get($estilo, fuente);
+    text-align: map-get($estilo, centro);
+    width: map-get($estilo, ancho-completo);
+}
